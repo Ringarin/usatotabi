@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* reservation page */
+header .r_btn {
+  display: none;
+}
+/* メインビジュアル */
+main #main_visual:before{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/reservation/main.jpg) left no-repeat;
+  background-size: cover;
+}
+
+main #main_visual .center {
+    width: 144px;
+    height: 400px;
+}
+
+main #main_visual h1 {
+    padding: 70px 40px;
+    width: auto;
+    text-shadow: none;
+    color: #000;
+    font-size: 4rem;
+    font-weight: bold;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+/* スクロールを促すアニメーション */
+main #main_visual a {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: -50%;
+    transform: translate(-50%, 0);
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    z-index: 2;
+    padding: 10px 10px 110px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+  }
+
+main #main_visual a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0);
+}
+main #main_visual a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+  }
+  @keyframes sdl {
+    0% {
+      transform: scale(1, 0);
+      transform-origin: 0 0;
+    }
+    50% {
+      transform: scale(1, 1);
+      transform-origin: 0 0;
+    }
+    50.1% {
+      transform: scale(1, 1);
+      transform-origin: 0 100%;
+    }
+    100% {
+      transform: scale(1, 0);
+      transform-origin: 0 100%;
+    }
+  }
+
+
+/* ---------------------コンテンツ部分------------------ */
+main .contents {
+    margin-top: 0;
+    padding-bottom: 200px;
+}
+/* 背景の太文字 */
+main .contents .a_text {
+  padding: 50px 0;
+  font-size: 7rem;
+  font-family: 'Chango', cursive;
+  color: #000000;
+  text-align: center;
+  opacity: .1;
+}
+
+/* コンテンツトップのテキスト */
+main .contents .a_box {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    width: 90%;
+    position: relative;
+    background: url(../images/common/paper.png);
+  }
+  
+  main .contents .a_box h2 {
+    padding: 50px 0;
+    color: #000;
+    font-size: 4rem;
+  }
+  
+  /* --------------------空室状況確認---------------------- */
+  main .contents .content .room {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding: 70px;
+    background-color:rgba(255, 255, 255, .5);
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  main .contents .content .room .box {
+    padding: 30px;
+    width: 25%;
+    background-color: rgb(221, 221, 221);
+    /* background-color:rgba(0, 0, 0, .5); */
+    border: 2px solid #000;
+  }
+
+  main .contents .more {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 350px;
+    background: #b0d3ed;
+  }
+  
+  main .contents .more a {
+    padding: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+@media screen and (max-width: 640px) {
+main .contents {
+  padding-bottom: 100px;
+}
+main .contents .a_text {
+  font-size: 4rem;
+}
+
+main .contents .a_box {
+  padding-bottom: 10px;
+}
+
+main .contents .a_box h2 {
+  font-size: 3rem;
+}
+
+main .contents .content .room {
+  padding: 20px;
+}
+
+main .contents .content .room .box {
+  margin-bottom: 10px;
+  width: 77%;
+}
+
+main .contents .more {
+  margin-bottom: 20px;
+  padding: 20px 0;
+  width: 80%;
+  font-size: 2rem;
+}
+
+}
