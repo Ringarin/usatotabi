@@ -1,0 +1,463 @@
+@charset "utf-8";
+/* about page */
+
+/* メインビジュアル */
+main #main_visual:before{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/plan/main.jpg) left no-repeat;
+  background-size: cover;
+}
+
+main #main_visual .center {
+    width: 144px;
+    height: 400px;
+}
+main #main_visual h1 {
+    padding: 70px 40px;
+    width: auto;
+    text-shadow: none;
+    color: #000;
+    font-size: 4rem;
+    font-weight: bold;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+/* スクロールを促すアニメーション */
+main #main_visual a {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: -50%;
+    transform: translate(-50%, 0);
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); */
+    z-index: 2;
+    padding: 10px 10px 110px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+  }
+
+main #main_visual a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0);
+}
+main #main_visual a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+  }
+  @keyframes sdl {
+    0% {
+      transform: scale(1, 0);
+      transform-origin: 0 0;
+    }
+    50% {
+      transform: scale(1, 1);
+      transform-origin: 0 0;
+    }
+    50.1% {
+      transform: scale(1, 1);
+      transform-origin: 0 100%;
+    }
+    100% {
+      transform: scale(1, 0);
+      transform-origin: 0 100%;
+    }
+  }
+
+
+/* ---------------------コンテンツ部分------------------ */
+main .contents {
+    margin-top: 0;
+    padding-bottom: 200px;
+}
+/* 背景の太文字 */
+main .contents .a_text {
+  padding: 50px 0;
+  font-size: 7rem;
+  font-family: 'Chango', cursive;
+  color: #000000;
+  text-align: center;
+  opacity: .1;
+}
+
+/* コンテンツトップのテキスト */
+main .contents .a_box {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    padding: 50px 0;
+    width: 70%;
+    position: relative;
+    background: url(../images/common/paper.png);
+}
+
+main .contents .a_box h2 {
+  padding: 0 0 50px 0;
+  color: #000;
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+main .contents .a_box p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 3;
+    text-align: center;
+}
+
+/* 各プラン遷移ボタン */
+main .contents .planlist {
+  margin-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  font-size: 3rem;
+}
+
+main .contents .planlist span {
+  display: block;
+  font-size: 2rem;
+}
+
+main .contents .planlist li {
+  width: 15%;
+}
+
+main .contents .planlist li a {
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: 4px solid #888;
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  color: #000;
+}
+
+main .contents section .fluit a{
+  background-color: #e68e9e;
+}
+main .contents section .taue a{
+  background-color: #F5EEDC;
+}
+main .contents section .take a{
+  background-color: #C0D8C0;
+}
+main .contents section .mount a{
+  background-color: #deb399;
+}
+main .contents section .fish a{
+  background-color: #88bfd6;
+}
+
+main .contents section .fluit a:hover {
+  background-color: #DD4A48;
+}
+main .contents section .taue a:hover {
+  background-color: #e6cf96;
+}
+main .contents section .take a:hover {
+  background-color: #86d886;
+}
+main .contents section .mount a:hover {
+  background-color: #e18e5a;
+}
+main .contents section .fish a:hover {
+  background-color: #49b1dd;
+}
+
+/* 各プラン */
+main .contents .plan_box {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+main .contents .plan_box .flame, main .contents .plan_box .text {
+  width: 40%;
+  overflow: hidden;
+}
+
+main .contents .plan_box img {
+  width: 100%;
+  transition: 0.3s all;
+}
+
+main .contents .plan_box img:hover {
+  transform: scale(1.1,1.1);
+  transition: 0.3s all;
+}
+
+main .contents .plan_box .text {
+  padding-top: 130px;
+  background: url(../images/common/paper.png);
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: bold;
+}
+
+/* 詳細はこちらボタン */
+main .contents .plan_text {
+  display: block;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px 0;
+  width: 60%;
+  color: #fff;
+  font-size: 2.2rem;
+  background-color: #2e514f;
+  border-radius: 10px;
+}
+
+main .contents .plan_box .photos {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .contents .plan_box h3 {
+  padding: 30px 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 500;
+  z-index: 10;
+}
+
+main .contents #fluit h3{
+  background-color: rgba(221, 74, 72, .7);
+}
+main .contents #taue h3{
+  background-color: rgba(165, 158, 100, .7);
+}
+main .contents #take h3{
+  background-color: rgba(129, 181, 107, .7);
+}
+main .contents #mount h3{
+  background-color: rgba(199, 102, 45, 0.7);
+}
+main .contents #fish h3{
+  background-color: rgba(31, 110, 153, 0.7);
+}
+
+/* 一日のスケジュール */
+main .contents .oneday {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 70px;
+  width: 90%;
+  background: url(../images/common/paper.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+main .contents .oneday h2 {
+  padding-bottom: 30px;
+}
+main .contents .oneday>.ds_f {
+  padding-top: 50px;
+  padding-right: 30px;
+  background-color: rgba(255, 255, 255, .7);
+}
+main .contents .oneday dl {
+  padding-left: 100px;
+  width: 500px;
+  font-size: 1.8rem;
+  line-height: 4;
+  font-weight: bold;
+}
+
+main .contents .oneday img {
+  height: 700px;
+}
+
+main .contents .oneday dt {
+  width: 100px;
+  float: left;
+  /* border-right: 2px solid #000; */
+  position: relative;
+}
+
+main .contents .oneday dt::after {
+  /* margin-left: 47px;
+  padding-right: 12px; */
+  /* font-size: 8px; */
+  content: "";
+  background-color: #8fc31f;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: absolute;
+  top: 29px;
+  right: -6px;
+  width: 11px;
+  height: 11px;
+}
+
+main .contents .oneday dt::before {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+  content: "";
+}
+
+main .contents .oneday dt:last-of-type::before {
+  display:none;
+}
+
+
+
+@media screen and (max-width: 640px) {
+  main .contents .a_text {
+    padding-bottom: 20px;
+    font-size: 4rem;
+  }
+
+  main .contents .a_box {
+    padding-bottom: 50px;
+    width: 90%;
+  }
+
+  main .contents .a_box h2 {
+    padding-bottom: 20px;
+    font-size: 3rem;
+  }
+
+  main .contents .a_box p {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+
+  /* 各ブランに遷移するボタン */
+  main .contents .planlist {
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    font-size: 1.4rem;
+  }
+
+  main .contents .planlist span {
+    font-size: 1rem;
+  }
+
+  main .contents .planlist li {
+    width: 20%;
+  }
+  
+  main .contents .planlist li a {
+    padding: 10px 0;
+  }
+
+  /* 各ブラン */
+  main .contents .plan_box {
+    margin-bottom: 100px;
+    position: relative;
+  }
+
+  main .contents .plan_box .photos {
+    display: flex;
+  }
+
+  main .contents .plan_box h3 {
+    padding: 25px;
+    font-size: 3rem;
+    font-weight: bold;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    top: 19%;
+    left: 20%;
+    letter-spacing: 1rem;
+  }
+
+  main .contents .plan_box .text {
+    padding: 20px;
+    padding-top: 30px;
+    height: 140px;
+    box-sizing: border-box;
+  }
+  main .contents .plan_box .text p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  main .contents .plan_box img, main .contents .plan_box .text {
+    width: 100%;
+  }
+
+  main .contents .plan_box .flame {
+    width: 100%;
+  }
+
+  main .contents .plan_text {
+    margin-top: 0;
+    padding: 0 5px;
+    width: 30%;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 31%;
+    right: 2%;
+  }
+
+  /* １日のスケジュール例 */
+  main .contents .oneday {
+    margin: 0;
+    padding: 40px 20px 60px 20px;
+    width: 100%;
+  }
+
+  main .contents .oneday h2 {
+    padding: 20px 0;
+  }
+
+  main .contents .oneday dl {
+    width: 100%;
+    padding: 30px 0 0 30px;
+    box-sizing: border-box;
+  }
+
+  main .contents .oneday img {
+    width: 80%;
+    height: auto;
+    opacity: 1;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    z-index: -1;
+  }
+
+}
