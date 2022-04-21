@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+/* リセットCSS */
+h3,h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.inner{
+    width: auto;
+}
+/* ------- */
+
+body{
+    color: #000026;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+
+main{
+    letter-spacing: 2px;
+}
+
+header .top_bg {
+    background: #000;
+    opacity: 0.2;
+}
+
+li{
+    font-size: 12px;
+}
+
+.logo{
+    letter-spacing: normal;
+}
+
+/* ハンバーガーメニュー */
+header .nav-toggle, header label {
+    display: none;
+}
+
+/* フェードイン */
+
+.fadeIn_text{
+    display: inline-block;
+    opacity: 0;
+    transform: translate(0, 50px);
+    transition: all 2000ms;
+}
+
+.fadeIn_item{
+    opacity: 0;
+    transform: translate(0, 100px);
+    transition: all 3000ms;
+}
+
+.scroll{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* メインビジュアル */
+
+main #main_visual{
+    height: auto;
+    width: auto;
+}    
+
+main #main_visual img{
+    width: 100%;
+    height: auto;
+}    
+
+main #main_visual #ul_title {
+    padding: 80px 60px 60px 160px;
+    position: absolute;
+    top: 26%;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}    
+
+main #main_visual #ul_title span{
+    display: block;
+    padding-left: 0;
+    font-size: 0.7em;
+}    
+
+
+
+/* メインコンテンツ */
+
+main #firstContents {
+    margin-top: 0;
+}
+
+#maincopy{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding: 60px 20px 60px;
+    font-family: HGMinchoB, serif;
+    letter-spacing: 5px;
+}
+
+.contentsBox{
+    width: 1010px;
+    background-image: url(../images/common/bg_white.png);
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.content_ttl{
+    display: inline-block;
+    font-size: 30px;
+    font-family: HGMinchoB, serif;
+    border-bottom: 1px solid #000026;
+    padding-top: 30px;
+}
+
+.contentsBox .content_item{
+    padding-left: 50px;
+    padding-bottom: 110px;
+}
+
+.contentsBox .content_item p{
+    padding-top: 30px;
+    line-height: 1.5;
+    padding-bottom: 50px;
+}
+
+.contentsBox .content_item ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contentsBox .content_item ul li{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+}
+
+
+/* 再開発 */
+.subContent{
+    text-align: center;
+    background-image: url(../images/common/bg_blue.png);
+    padding-bottom: 85px;
+}
+
+.subContent_ttl h3{
+    color: #fff;
+    display: inline-block;
+    font-size: 40px;
+    font-family: HGMinchoB, serif;
+    padding-top: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+.subContent_ttl p{
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    border: none;
+    padding-top: 10px;
+}
+
+
+.subContent h4{
+    font-size: 22px;
+    padding-top: 40px;
+    font-family: HGMinchoB, serif;
+}
+
+.subContent .card{
+    width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+    margin-top: 60px;
+    padding-bottom: 70px;
+}
+
+.subContent .card p{
+    padding: 30px;
+}
+
+.subContent .card img{
+    width: 100%;
+}
+
+
+/* 資料請求 */
+
+.contact{
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+}
+
+.contact_btn{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 20px;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    background    : #dbb400;     /* 背景色     */
+    color         : #000026;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 4px 4px #000026;  /* 影の設定 */
+    border        : 2px solid #dbb400;    /* 枠の指定 */
+    /*text-decoration: underline;*/
+    width: 100%;
+    height: 100%;
+}
+
+.contact_btn a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000026;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.contact_btn a:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #dbb400;     /* 背景色     */
+    background    : #000026;     /* 文字色     */
+}
+
+/* footer */
+.tel{
+    color: #fff;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+@media screen and (max-width:1200px) {    
+    .contentsBox,
+    .subContent .card{
+        width: auto;
+    }
+}
+
+/* ----レスポンシブ対応---- */
+
+@media screen and (max-width:640px) {    
+    
+    /*--- ハンバーガーメニュー ---*/
+    header .btn-burger {
+        position: fixed;
+        right: 0;
+    }
+    
+    header nav ul{
+        position: fixed;
+    }
+
+    /*--- 文字サイズ ---*/
+    
+    main{
+        font-size: 13px;
+    }
+
+    /* h1 SPAN */
+    main #main_visual h1 span {
+        padding-left: 70px;
+        line-height: 60px;
+    }
+
+    /* h2 */
+    main #maincopy{
+        font-size: 18px;
+        padding: 50px 0 40px;
+    }
+    
+    /* h3 */
+    .content_ttl,
+    .subContent_ttl h3,
+    .subContent_ttl p{
+        font-size: 20px;
+    }
+    
+    /* h4 */
+    .subContent h4{
+        font-size: 15px;
+        padding-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        word-break: normal;
+    }
+    
+    /* ----------- */
+    
+    /* メインビジュアル */
+
+    main #main_visual #ul_title {
+        width: 50%;
+        padding: 20px 20px 20px 30px;
+        position: absolute;
+        top: 40%;
+    }
+    
+        
+    /* コンテンツ */
+
+    .contentsBox{
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 0;
+    }
+
+    .contentsBox .content_item {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+    }
+
+    .contentsBox .content_item p{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .contentsBox .content_item ul{
+        display: block;
+    }
+    .contentsBox .content_item img{
+    width: 90%;
+    }
+
+
+    /* 再開発 */
+
+    .subContent .card{
+        width: 90%;
+        margin-top: 20px;
+        padding-bottom: 0;
+        text-align: justify;
+    }
+
+    .subContent .card img{
+        width: 100%;
+    }
+
+
+    /* 資料請求 */
+
+    .contact_btn img{
+        width: 80%;
+    }
+    
+
+}

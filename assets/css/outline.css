@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+html {
+    font-family: HGMinchoB, serif;
+}
+
+/* ヘッダー */
+header .top_bg {
+    background: #000;
+    opacity: 0.2;
+}
+
+/* ハンバーガーメニュー */
+header .nav-toggle, header label {
+    display: none;
+}
+
+/* メインビジュアル */
+.e_bg_1 #main_visual {
+    height: auto;
+}
+
+.e_bg_1 #main_visual img {
+    width: 100%;
+    height: auto;
+}
+
+main #main_visual #ul_title {
+    padding: 40px 0 20px 60px;
+    width: 500px;
+    position: absolute;
+    top: 26%;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+main #main_visual #ul_title span {
+    padding-left: 0;
+    font-size: 0.4em;
+}
+
+main #main_visual #ul_title .ul_title_map {
+    padding-left: 30%;
+}
+
+/* 青背景 */
+.e_bg_1 {
+    background-image: url(../images/common/bg_blue.png);
+}
+
+
+.e_bg_1 h2 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .8);
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+
+/* 物件概要 */
+table {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #444;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 15px 20px;
+}
+
+th {
+    width: 25%;
+    background-color: #eee;
+}
+
+/* map */
+.o_map {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+    
+.o_map .pc {
+    display: block;
+}
+
+.o_map .sp {
+    display: none;
+}
+
+.o_map h2 {
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.o_map .map {
+    text-align: center;
+}
+
+.o_map .map img {
+    width: 100%;
+}
+
+.o_map .o_links {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.o_map .o_link {
+    width: 40%;
+    height: 80px;
+    text-align: center;
+}
+
+.o_map .o_link a {
+    display: block;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    box-sizing: border-box;
+    background: radial-gradient(#ebebeb, #535b6f) fixed;
+    transition: .3s;
+    box-shadow: 4px 4px #000026;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.o_map .o_link a::after {
+    padding-left: 10px;
+    content: url(../images/outline/outline_yazirusi.png);
+    vertical-align: text-top;
+}
+
+.o_map .o_link a:hover {
+    filter: invert(1);
+    box-shadow: none;
+    /* box-shadow: 4px 4px #fffed9; */
+}
+
+
+
+/* 一番下の資料請求ボタン 
+.e_bg_1 .contact_btn {
+    padding: 60px 0;
+    text-align: center;
+}*/
+
+
+/* 資料請求 */
+
+.contact{
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+}
+
+.contact_btn{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 20px;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    background    : #dbb400;     /* 背景色     */
+    color         : #000026;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 4px 4px #000026;  /* 影の設定 */
+    border        : 2px solid #dbb400;    /* 枠の指定 */
+    /*text-decoration: underline;*/
+    width: 100%;
+    height: 100%;
+}
+
+.contact_btn a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #000026;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.contact_btn a:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #dbb400;     /* 背景色     */
+    background    : #000026;     /* 文字色     */
+}
+
+/* footer */
+.tel{
+    color: #fff;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+
+@media screen and (max-width:640px) {
+    /* -----共通------ */
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    main .inner {
+        width: auto;
+    }
+
+    body {
+        font-size: 13px;
+    }
+    
+    /* h2 */
+    .e_bg_1 h2 {
+        margin-bottom: 20px;
+        width: 45%;
+        padding: 50px 20px 4px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    
+    /* h3 */
+    .e_bg_1 h3 {
+        width: 30%;
+        font-size: 30px;
+    }
+    
+    /* -----ヘッダー------ */
+    header .top p a {
+        display: none;
+    }
+
+    /* ハンバーガーメニュー */
+    header .btn-burger {
+        position: fixed;
+        right: 0;
+    }
+    
+    header nav ul{
+        position: fixed;
+    }
+    
+    /* メインビジュアル */
+    main #main_visual{
+        height: 237px;
+    }
+    
+    main #main_visual #ul_title {
+        width: 50%;
+        padding: 15px 20px 0 30px;
+        position: absolute;
+        top: 38%;
+    }
+    
+    main #main_visual h1 span {
+        font-size: 16px;
+        padding-left: 70px;
+        line-height: 60px;
+    }
+
+    /* ----メインとコンテンツの間------- */
+    #firstContents {
+        margin-top: 0;
+    }
+    /* ------コンテンツ----- */
+    table {
+        width: 86%;
+        margin-top: 10px;
+    }
+
+    table th, table td {
+        padding: 8px 20px;
+        display: block;
+        width: 100%;
+        border-bottom: none;
+        box-sizing: border-box;
+    }
+
+    table td {
+        background-color: #fff;
+    }
+
+    table tr:last-child td:last-child {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .o_map {
+        width: 95%;
+    }
+    
+    .o_map .pc {
+        display: none;
+    }
+
+    .o_map .sp {
+        display: block;
+    }
+
+
+    .o_map .o_links p:last-child {
+        display: none;
+    }
+
+    .o_map .o_links {
+        display: block;
+    }
+    .o_map .o_link {
+        padding-top: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+    
+    /* ------サイドボタン----- */
+    #sideBtn img {
+        width: 15%;
+    }
+
+    /* -----一番下の資料請求ボタン------ */
+    .contact_btn img {
+        width: 80%;
+    }
+
+}
