@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- reservationページ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/reservation.css">
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <title>Usatotabi | 宇佐観光協会</title>
+</head>
+
+<body>
+    <header class="ds_f j_sb">
+        <div class="logo">
+            <a href="../index.html" class="ds_f">
+                <img src="../assets/images/common/logo.png" alt="ロゴ">
+                <p class="logo_text">うさとたび</p>
+            </a>
+        </div>
+        <div class="ds_f j_sb">
+            <!-- 予約ボタン -->
+            <div class="r_btn">
+                <a href="../reservation/index.html">ご予約はこちら</a>
+            </div>
+            <!-- ハンバーガーボタン -->
+            <a class="openbtn1">
+                <div class="openbtn-area">
+                    <span></span><span></span><span></span>
+                </div>
+            </a>
+
+            <!-- ナビゲーション -->
+            <nav id="g-nav">
+                <a href="../index.html">
+                    <img src="../assets/images/common/logo.png" alt="ロゴ">
+                    <p class="logo_text">うさとたび</p>
+                </a>
+                <ul>
+                    <li><a href="../about/index.html"><span>About</span>農泊について</a></li>
+                    <li><a href="../plan/index.html"><span>Plan</span>体験プラン</a></li>
+                    <li><a href="../access/index.html"><span>Access</span>アクセス</a></li>
+                    <li><a href="../contact/index.html"><span>Contact</span>コンタクト</a></li>
+                    <li><a href="../reservation/index.html"><span>Reservation</span>ご予約</a></li>
+                    <li class="ds_f sns">
+                        <a href="#"><img src="../assets/images/common/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="../assets/images/common/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="../assets/images/common/twitter.png" alt="twitter"></a>
+                    </li>
+                </ul>
+                <img class="travel_woman" src="../assets/images/common/travel_woman.png" alt="">
+            </nav>
+            <div class="circle-bg"></div>
+        </div>
+    </header>
+
+
+    <main>
+        <div id="main_visual">
+            <div class="center">
+                <h1 id="mainHeading" class="logo_text">ご予約</h1>
+                <a href="#">Scroll</a>
+            </div>
+        </div>
+
+        <div class="contents">
+            <section class="content inner">
+                <p class="a_text">Reservation</p>
+                <div class="a_box">
+                    <h2>空室状況の確認</h2>
+                    <div class="room">
+                        <div class="ds_f j_sb">
+                            <div class="box">
+                                <p>チェックイン</p>
+                                <input type="date">
+                            </div>
+                            <div class="box">
+                                <p>チェックアウト</p>
+                                <input type="date">
+                            </div>
+                            <div class="box">
+                                <p>人数</p>
+                                <select name="people">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p class="more"><a href="#">空室状況をチェック</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+    <footer>
+        <img class="vegetable v_pc" src="../assets/images/top/bg_footer_all.png" alt="">
+        <img class="vegetable v_sp" src="../assets/images/top/bg_footer_two.png" alt="">
+        <div class="footer_bg ds_f j_sb">
+            <div class="footer_logo">
+                <img src="../assets/images/common/logo.png" alt="">
+                <p class="logo_text">うさとたび</p>
+            </div>
+            <ul>
+                <li><a href="../about/index.html">農村民泊とは</a></li>
+                <li><a href="../plan/index.html">体験プラン</a></li>
+                <li><a href="../access/index.html">アクセス</a></li>
+                <li><a href="../contact/index.html">お問い合わせ・よくあるご質問</a></li>
+                <li><a href="#">ご予約</a></li>
+            </ul>
+            <div class="footer_address">
+                <a class="tel" href="tel:090-1234-5678">TEL　090-1234-5678</a>
+                <p>受付時間　9:00 ~ 18:00</p>
+                <address>
+                    〒879-0492<br>
+                    大分県宇佐市上田1030-1<br>
+                    一般社団法人　宇田観光協会
+                </address>
+            </div>
+        </div>
+        <p id="page-top"><a href="#"><i class="far fa-caret-square-up"></i>Page Top</a></p>
+        <p class="copyright"><small>Copyright &copy; usatotabi. All rights Reserved.</small></p>
+    </footer>
+    
+    <!-- マウスストーカー -->
+    <div class="cursor">
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+    </div>
+
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/three.r119.min.js"></script>
+    <script src="../assets/js/vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({
+            el: "main .contents",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xffffff,
+            midtoneColor: 0xffffff,
+            lowlightColor: 0xffffff,
+            baseColor: 0x3479d2,
+            blurFactor: 0.57,
+            speed: 1.40,
+            zoom: 3.00
+        })
+    </script>
+</body>

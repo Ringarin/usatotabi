@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- contactページ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <title>Usatotabi | 宇佐観光協会</title>
+</head>
+
+<body>
+    <header class="ds_f j_sb">
+        <div class="logo">
+            <a href="../index.html" class="ds_f">
+                <img src="../assets/images/common/logo.png" alt="ロゴ">
+                <p class="logo_text">うさとたび</p>
+            </a>
+        </div>
+        <div class="ds_f j_sb">
+            <!-- 予約ボタン -->
+            <div class="r_btn">
+                <a href="../reservation/index.html">ご予約はこちら</a>
+            </div>
+            <!-- ハンバーガーボタン -->
+            <a class="openbtn1">
+                <div class="openbtn-area">
+                    <span></span><span></span><span></span>
+                </div>
+            </a>
+
+            <!-- ナビゲーション -->
+            <nav id="g-nav">
+                <a href="../index.html">
+                    <img src="../assets/images/common/logo.png" alt="ロゴ">
+                    <p class="logo_text">うさとたび</p>
+                </a>
+                <ul>
+                    <li><a href="../about/index.html"><span>About</span>農泊について</a></li>
+                    <li><a href="../plan/index.html"><span>Plan</span>体験プラン</a></li>
+                    <li><a href="../access/index.html"><span>Access</span>アクセス</a></li>
+                    <li><a href="../contact/index.html"><span>Contact</span>コンタクト</a></li>
+                    <li><a href="../reservation/index.html"><span>Reservation</span>ご予約</a></li>
+                    <li class="ds_f sns">
+                        <a href="#"><img src="../assets/images/common/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="../assets/images/common/instagram.png" alt="instagram"></a>
+                        <a href="#"><img src="../assets/images/common/twitter.png" alt="twitter"></a>
+                    </li>
+                </ul>
+                <img class="travel_woman" src="../assets/images/common/travel_woman.png" alt="">
+            </nav>
+            <div class="circle-bg"></div>
+        </div>
+    </header>
+
+
+    <main>
+        <div id="main_visual">
+            <div class="center">
+                <h1 id="mainHeading" class="logo_text">お問い合わせ</h1>
+                <a href="#">Scroll</a>
+            </div>
+        </div>
+
+        <div class="contents">
+            <section class="content inner">
+                <p class="a_text">Contact</p>
+                <div class="a_box">
+                    <div class="qa">
+                        <h2>よくあるご質問</h2>
+                        <div class="cp_qa">
+                            <div class="cp_actab">
+                                <input id="cp_tabfour031" type="checkbox" name="tabs">
+                                <label for="cp_tabfour031">お支払い方法は？</label>
+                                <div class="cp_actab-content">
+                                    <p>ご予約時にクレジットカードでの精算をお願いします。</p>
+                                </div>
+                            </div>
+                            <div class="cp_actab">
+                                <input id="cp_tabfour032" type="checkbox" name="tabs">
+                                <label for="cp_tabfour032">持っていくものは？</label>
+                                <div class="cp_actab-content">
+                                    <p>一般的なホテル等とは異なり、歯ブラシや寝巻、タオル等のアメニティはございませんのでご持参下さい。</p>
+                                </div>
+                            </div>
+                            <div class="cp_actab">
+                                <input id="cp_tabfour033" type="checkbox" name="tabs">
+                                <label for="cp_tabfour033">キャンセル料は？</label>
+                                <div class="cp_actab-content">
+                                    <p>宿泊日の3日前〜：30％以内<br>宿泊日の前日：40％以内<br>宿泊日の当日：100%以内</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h2>お問い合わせ</h2>
+                        <p>うさとたびについてのお問い合わせは、下記フォームに必要事項をご記入の上、お送り下さい。</p>
+                        <p>お問い合わせ内容の確認後、担当者よりご連絡させていただきます。</p>
+                        <p>ご回答に日数を要する場合もございます。ご了承いただきますようお願いします。</p>
+                        <div class="Form">
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label">
+                                    <span class="Form-Item-Label-Required">必須</span>氏名
+                                </p>
+                                <div id="nameSection">
+                                    <span class="alert">漢字で氏名をご記入下さい。</span>
+                                    <input type="text" id="nameText" class="Form-Item-Input" placeholder="例）山田太郎">
+                                </div>
+                            </div>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>ふりがな</p>
+                                <div id="kanaSection">
+                                    <span class="alert">ひらがなで氏名をご記入下さい。</span>
+                                    <input type="text" id="kanaText" class="Form-Item-Input" placeholder="例）やまだたろう">
+                                </div>
+                            </div>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+                                <div id="telSection">
+                                    <span class="alert">電話番号をご記入下さい。</span>
+                                    <input type="text" id="tel" class="Form-Item-Input" placeholder="例）000-0000-0000">
+                                </div>
+                            </div>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+                                <div id="emailSection">
+                                    <span class="alert">半角英数字でメールアドレスをご記入下さい。</span>
+                                    <input type="email" id="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+                                </div>
+                            </div>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label isMsg"><span
+                                        class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+                                <div id="msgSection">
+                                    <span class="alert">お問い合わせ内容をご記入下さい。</span>
+                                    <textarea id="msg" class="Form-Item-Textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class="Form-Item">
+                                <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>個人情報利用目的</p>
+                                <div id="checkSection">
+                                    <span class="alert">同意するにチェックして下さい。</span>
+                                    <label><input type="checkbox" id="check" name="check">同意する</label>
+                                </div>
+                            </div>
+                            <input type="submit" class="Form-Btn" value="送信する">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <img class="vegetable v_pc" src="../assets/images/top/bg_footer_all.png" alt="">
+        <img class="vegetable v_sp" src="../assets/images/top/bg_footer_two.png" alt="">
+        <div class="footer_bg ds_f j_sb">
+            <div class="footer_logo">
+                <img src="../assets/images/common/logo.png" alt="">
+                <p class="logo_text">うさとたび</p>
+            </div>
+            <ul>
+                <li><a href="../about/index.html">農村民泊とは</a></li>
+                <li><a href="../plan/index.html">体験プラン</a></li>
+                <li><a href="../access/index.html">アクセス</a></li>
+                <li><a href="#">お問い合わせ・よくあるご質問</a></li>
+                <li><a href="../reservation/index.html">ご予約</a></li>
+            </ul>
+            <div class="footer_address">
+                <p class="tel">TEL　090-1234-5678</p>
+                <p>受付時間　9:00 ~ 18:00</p>
+                <address>
+                    〒879-0492<br>
+                    大分県宇佐市上田1030-1<br>
+                    一般社団法人　宇田観光協会
+                </address>
+            </div>
+        </div>
+        <p id="page-top"><a href="#"><i class="far fa-caret-square-up"></i>Page Top</a></p>
+        <p class="copyright"><small>Copyright &copy; usatotabi. All rights Reserved.</small></p>
+    </footer>
+    
+    <!-- マウスストーカー -->
+    <div class="cursor">
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+    </div>
+
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/three.r119.min.js"></script>
+    <script src="../assets/js/vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({
+            el: "main .contents",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xffffff,
+            midtoneColor: 0xffffff,
+            lowlightColor: 0xffffff,
+            baseColor: 0x3479d2,
+            blurFactor: 0.57,
+            speed: 1.40,
+            zoom: 3.00
+        })
+    </script>
+</body>
