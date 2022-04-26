@@ -9,7 +9,7 @@ body {
     font-weight: 500;
 }
 .inner {
-    width: 1200px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -201,14 +201,14 @@ header .logo_text {
 }
 /* 予約ボタン */
 .r_btn {
-    background: #ddd;
-    border: 1px solid #666;
-    color: #fff;
-    font-size: 1.5rem;
-    border: 2px solid #000;
-    font-weight: bold;
-    -webkit-box-shadow: 4px 4px 0 #000;
-    box-shadow: 4px 4px 0 #000;
+  background: #ddd;
+  border: 1px solid #666;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 2px solid #000;
+  font-weight: bold;
+  -webkit-box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 #000;
 }
 
 .r_btn a {
@@ -626,9 +626,13 @@ main #main_visual #slide ul li img {
 }
 
 .contents .content h2 {
-    padding-top: 310px;
-    color: #fff;
-    text-align: center;
+  padding-top: 310px;
+  color: #fff;
+  text-align: center;
+}
+
+.top_page .contents .content h2 {
+  text-shadow: 0px 0px 4px rgb(0 0 0 / 80%);
 }
 
 .contents .content .exs img {
@@ -658,7 +662,7 @@ main #main_visual #slide ul li img {
 .contents .content .exs .ex_1 {
   position: absolute;
   top: 250px;
-  left: 700px;
+  right: 0px;
 }
 
 .contents .content .exs .ex_2 {
@@ -668,6 +672,7 @@ main #main_visual #slide ul li img {
 }
 
 .contents .content .exs img:first-of-type {
+  max-width: 67%;
   position: absolute;
   z-index: 20;
 }
@@ -679,25 +684,69 @@ main #main_visual #slide ul li img {
   z-index: 20;
 }
 
-
-
 .contents .content .exs .ex h3 {
     font-size: 2.8rem;
 }
 
 .contents .content .exs .ex p {
-    margin-bottom: 30px;
     font-size: 1.6rem;
     line-height: 3;
 }
 
 .contents .content .exs .ex .more {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+  header #g-nav>a {
+    top: 200px;
+    left: 190px;
+  }
+
+  .contents .content .exs img {
+    width: 56%;
+    min-width: 370px;
+  }
+
+  .contents .content .exs img:last-of-type {
+    top: 1000px;
+  }
+
+  .contents .content .exs .ex {
+    height: auto;
+  }
+
+  .contents .content .exs .ex_1 {
+    padding: 20px 15px 20px 65px;
+    top: 350px;
+  }
+
+  .contents .content .exs .ex_2 {
+    top: 750px;
+  }
+
+  .contents .content .exs .ex_2 .more{
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .contents .content .exs .ex h3 {
+    margin-left: -50px;
+    text-align: center;
+  }
+
+  .contents .content .exs .ex p {
+    margin-bottom: 0px;
+  }
+
+  footer img.vegetable {
+    top: -100px;
+  }
+}
+
 .contents .boxes {
-  margin-top: 1200px;
+  margin-top: 1330px;
 }
 
 
@@ -712,7 +761,8 @@ main #main_visual #slide ul li img {
 
 .boxes .box {
   padding: 10px;
-  width: 400px;
+  max-width: 400px;
+  width: 40%;
   height: 550px;
   background: #fff;
   border: 10px solid #ddd;
@@ -736,7 +786,7 @@ main #main_visual #slide ul li img {
 }
 
 .boxes .box img {
-  width: 400px;
+  width: 100%;
 }
 
 .boxes .box .more {
@@ -755,18 +805,25 @@ main #main_visual #slide ul li img {
   width: 230px;
   position: absolute;
   bottom: -60px;
-  right: -170px;
+  right: -200px;
 }
-
+@media screen and (min-width: 641px) and (max-width: 1300px) {
+  .boxes .voice .people {
+    bottom: -150px;
+    left: 0;
+    max-width: 50%;
+  }
+}
 /* ---------------------お知らせ--------------------- */
 .info {
-  width: 70%;
+  min-width: 70%;
   height: 420px;
   margin-top: 100px;
   padding: 30px 90px 30px 30px;
   background-image: url(../images/top/bg_water1.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: left;
 }
 
 .info h2, .map h2, .insta h2 {
@@ -823,6 +880,7 @@ main #main_visual #slide ul li img {
   padding: 0 25px;
   box-sizing: border-box;
 }
+
 .sliderArea.w300 {
   max-width: 300px;
 }
@@ -924,7 +982,7 @@ main #main_visual #slide ul li img {
 }
 
 .map img {
-  width: 65%;
+  max-width: 500px;
   border-radius: 20%;
 }
 
@@ -936,16 +994,24 @@ main #main_visual #slide ul li img {
 
 .map .more a {
   font-size: 1.6rem;
-  line-height: 2;
+  line-height: 3;
 }
 
 /* ------------Instagram-------------- */
 .contents .insta {
-  padding-top: 60px;
-  height: 710px;
+  padding-top: 100px;
+  height: 670px;
   background-image: url(../images/top/bg_mountain.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
+}
+
+@media screen and (min-width: 1500px) {
+  .contents .insta {
+    padding-top: 160px;
+  }
 }
 
 .contents .insta h2 {
@@ -958,9 +1024,17 @@ main #main_visual #slide ul li img {
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
-  width: 1070px;
+  max-width: 1070px;
+  width: 100%;
   flex-wrap: wrap;
 }
+
+@media screen and (min-width: 530px) and (max-width: 640px) {
+  .contents .insta {
+    padding-bottom: 60px;
+  }
+}
+
 
 .contents .insta .picture .picture_box {
   width: 215px;
@@ -981,6 +1055,7 @@ main #main_visual #slide ul li img {
 
 /* 下の予約ボタン */
 .r_btn_bottom {
+  margin-top: 60px;
   margin-right: auto;
   margin-left: auto;
   width: 400px;
@@ -999,13 +1074,17 @@ footer {
   padding-top: 10px;
   position: relative;
   color: #fff;
-  background-color: #ae4d26;
+  /* background-color: #ae4d26; */
+  background-color: #592e20;
 }
 
 footer .vegetable {
   width: 100%;
+  max-width: 1200px;
   position: absolute;
-  top: -140px;
+  top: -120px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 footer .v_sp {
@@ -1013,9 +1092,13 @@ footer .v_sp {
 }
 
 footer .footer_bg {
-  padding: 160px 100px 50px;
-  background-color: #420e10;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding: 160px 0px 50px;
+  justify-content: space-around;
 }
+
 
 /* フッターロゴ */
 footer .footer_bg .footer_logo {
@@ -1075,7 +1158,7 @@ footer .footer_address address {
 
 /* ページトップ */
 #page-top a{
-  background:#462f27;
+  background: #420e10;
   color:rgb(255, 255, 255);
   text-align: center;
   display: block;
@@ -1106,7 +1189,66 @@ footer .copyright {
 }
 
 
+@media screen and (min-width: 641px) and (max-width: 980px) {
+  .map {
+    padding-left: 110px;
+    background-position: left;
+    background-size: cover;
+  }
+  
+  .map img {
+    width: 450px;
+  }
+}
 
+@media screen and (min-width: 641px) and (max-width: 860px) {
+  .contents .boxes {
+    margin-top: 1200px;
+  }
+
+  .contents .insta .picture .pc_only img {
+    display: none;
+  }
+
+  .contents .insta .picture .picture_box {
+    width: 30%;
+  }
+
+  footer img.vegetable {
+    top: -60px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  main .layer {
+    line-height: 3;
+  }
+
+  .boxes section:first-of-type {
+    margin-right: 10px;
+  }
+
+  .boxes .box .b_text {
+    padding: 0 10px;
+  }
+
+  .boxes .box .more {
+    margin-top: 30px;
+  }
+
+  .info {
+    background-position: right;
+    background-size: cover;
+  }
+
+  .info h2 {
+    margin-left: 130px;
+  }
+  
+  .sliderArea {
+    width: 460px;
+  }
+}
 
 @media screen and (max-width: 640px) {
   img {
@@ -1268,6 +1410,7 @@ footer .copyright {
   }
 
   .contents .content .exs .ex p {
+    margin-bottom: 30px;
     line-height: 2;
   }
 
@@ -1305,7 +1448,6 @@ footer .copyright {
   /* お知らせ */
   .info {
     margin-top: 100px;
-
     padding: 120px 90px 50px 30px;
     background-size: cover;
     background-position: -720px;
@@ -1344,7 +1486,7 @@ footer .copyright {
     width: 100%;
     background-size: cover;
     background-position: -100px;
-    text-align: right;
+    text-align: center;
     height: 550px
   }
 
@@ -1364,6 +1506,7 @@ footer .copyright {
 
   .map img {
     width: 90%;
+    max-width: 360px;
   }
 
   /* インスタグラム */
@@ -1408,7 +1551,7 @@ footer .copyright {
   }
 
   footer .footer_bg {
-    padding: 50px 20px 30px;
+    padding: 100px 20px 30px;
     text-align: center;
   }
 
